@@ -1,0 +1,11 @@
+<div class="content-box col-xs-10 col-xs-offset-1">
+  <h1>Enter Your Movie Details</h1>
+  <%= simple_form_for @movie do |f| %>
+    <%= f.input :title %>
+    <%= f.input :genre %>
+    <%= f.input :rating %>
+    <%= f.input :description %>
+    <br  />
+    <%= f.submit 'Add Movie', class: 'btn btn-primary' %>
+  <% end %>
+</div>

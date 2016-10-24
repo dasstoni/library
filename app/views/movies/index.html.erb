@@ -1,0 +1,15 @@
+<h1 class = 'content-box col-xs-10 col-xs-offset-1 text-center'>
+   Movies
+ </h1>
+
+<% @movies.each do |movie| %>
+  <div class='content-box col-xs-8 col-xs-offset-2'>
+    <h1 class='text-center'><%= movie.title %></h1>
+    <br  />
+    <h3><%= movie.genre %></h3>
+
+    <i><%= movie.rating %></i>
+    <br  />  <br  />
+    <p class= 'content-box'><%= movie.description %></p>
+  </div>
+<% end %>
